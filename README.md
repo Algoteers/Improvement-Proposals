@@ -2,6 +2,10 @@
 
 At this repo you will find the full history of improvement proposals not only for the software but also for any other aspect of the project. 
 
+## Proposals
+
+Find at the root of this repo the different proposals. 
+
 ## Workflow
 
 The rules are very simple.
