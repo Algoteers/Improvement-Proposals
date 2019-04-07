@@ -1,4 +1,4 @@
-# No Email Addresses
+# SIP 003 - No Email Addresses
 
 Email Addresses are a centralized and sensitive data point.
 

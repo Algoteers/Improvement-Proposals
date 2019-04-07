@@ -1,4 +1,4 @@
-# Use Native ES6 Modules Without Bundling
+# SIP 002 - Use Native ES6 Modules Without Bundling
 
 Superalgos source code is written as ES6 modules, which is the modern, interoperable standard. Webpack and Babel are currently used to transpile that ES6 code into CommonJS (i.e. nodejs) and ES5 code. This process has a number of pros and cons, but I believe the pros win out.
 
