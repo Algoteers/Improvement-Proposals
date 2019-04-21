@@ -32,7 +32,7 @@ Feel free to submit PRs with proposed changes to the author's fork. Convince him
 
 ### 5. Voting
 
-Voting procedures are being discussed on [SIP 004 - PGP + git voting]( https://github.com/Superalgos/Improvement-Proposals/blob/master/SIP%20004%20-%20pgp-git-voting.md).
+Voting procedures are being discussed on [SIP 004 - PGP + git voting]( https://github.com/Superalgos/Improvement-Proposals/blob/master/SIP%20004%20-%20pgp-git-voting.md) and its corresponding [issue](https://github.com/Superalgos/Improvement-Proposals/issues/8).
 
 ### 6. Further discussion
 
