@@ -1,33 +1,40 @@
 # Superalgos Improvement Proposals (SIPs)
 
-At this repo you will find the full history of improvement proposals not only for the software but also for any other aspect of the project. 
+This repository holds the history of improvement proposals, both software related and non-software related, covering every single aspect of the project that may be discussed and improved.
 
 ## Proposals
 
-Find at the root of this repo the different proposals. 
+Proposals shall be listed at the root of this repository.
 
 ## Workflow
 
-The rules are very simple.
+Please follow these simple guidelines:
 
-### 1. Submit a Proposal.
+### 1. Scan previous proposals.
 
-Just for the repo and submit your proposal on an .md file via PR. Read a few of the others to guess the formatting / language used.
+Before crafting your own proposal, make sure the topic is not being discussed on other proposals.
 
-### 2. Discussion
+### 2. Submit a Proposal.
 
-This repo mantainer will merge your PR (or reject it) and assing a SIP number to it. The new proposal will be discussed at an issue with the same SIP number. 
+Submit your proposal on an .md file via PR. 
 
-### 3.Suggest Changes
+Reading a few existing proposals may help you organize and format your own. The more thorough and clear the proposal, the more likely it is to be taken seriously by the community. No need to rush; take your time and try to be as clear as possible.
+
+### 3. Discussion
+
+The maintainers of this repository will merge or reject your PR. Rejections should come with a specific request relating to your submission (e.g. please improve this or that).
+
+After your proposal is merged, the maintainers shall assign a corresponding SIP and create an issue with the same number to host the discussion of the SIP.
+
+### 4. Suggest Changes
 
 Feel free to submit PRs with proposed changes to the author's fork. Convince him/her to merge it and re-submit it here.
 
-### 4.Voting
+### 5. Voting
 
-Voting time will be called at the SIP issue and any team member (those who aquired voting power by contributing to the project) can vote just with a thumbs up/down icon + the number of votes used.
+Voting procedures are being discussed on [SIP 004 - PGP + git voting]( https://github.com/Superalgos/Improvement-Proposals/blob/master/SIP%20004%20-%20pgp-git-voting.md).
 
-After a reasonable time votes are counted and a decision is made. 
+### 6. Further discussion
 
-### 5.Rediscussing
+If you are not successful with your SIP, you may iterate, improve it and continue promoting it for further discussion. Chances are you might get it approved once it resolves controversial aspects. 
 
-You can continue promoting your proposal for rediscussion if you wish. You might get it approved after a few iterations.
