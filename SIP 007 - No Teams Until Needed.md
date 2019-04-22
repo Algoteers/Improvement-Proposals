@@ -1,5 +1,7 @@
 # SIP 007 - No Teams Until Needed
 
+_This is a recommendation by Luis Molina to be implemented as a core team effort and applicable for the very early stages of the project only._
+
 Teams is going to be a fundamental part of the structure of the community. We expect people to form teams and have different types of members, be able to request be part of, approve requests, and so on. Reality is that that is our future vision. We built some of that functionality today in order to have it ready and minimize changes in the future on the backends. That is the reason we are requesting people to create a Team even if they are the only one inside.
 
 ### Today is an Entry Barrier
