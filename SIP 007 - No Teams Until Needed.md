@@ -22,3 +22,6 @@ userName-Team --> Luis-Team
 userName-Simulation-Engine  --> Luis-Simulation-Engine
 userName-Execution-Engine  --> Luis-Execution-Engine
 ```
+
+Once we have a Financial Beings module functional we can also enable the possibility of changing the bots names. As of today, nobody should care to give a name to a bot that have no real utility during the period where people is just learning how to use the Strategizer and try to automate some of the trades they are doing.
+
