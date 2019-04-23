@@ -30,4 +30,4 @@ The simulation should keep running.
 
 The Strategizer should have a "Recalculate Simulations" button, that removes both Trading Simulations clones and creates fresh ones, again starting from the same dates the original clones started (so that users can easily compare and see the difference in performance of the changes in their strategies).
 
-With this "Last Mile" improvement, we can target a widther market of exchange users that are not tech savvy enough to operate the Clones Modules and that is they would do, they would anyways use a similar set of initial values.  
+With this "Last Mile" improvement, we can target a wider market of exchange users that are not tech savvy enough to operate the Clones Modules and that is they would do, they would anyways use a similar set of initial values.  
