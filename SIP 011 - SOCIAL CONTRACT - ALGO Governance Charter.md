@@ -57,7 +57,7 @@ The Size of an ALGO Stream is an indication of the number of ALGO Tokens the ALG
    1. Voting Announcements
 
 
-      1. Votes related to Annual Fundraising Plan and MEO Plan (described later in the document), Constitution amendment and ALGO Governance Charter amendment shall be publicly announced via all available official Superalgos Organization channels, including but not limited to:
+      1. Votes related to Annual Fundraising Plan and MEO Plan (described later in the document), Constitution amendment and ALGO Governance Charter amendment shall be publicly announced via all available official Superalgos ProjectF channels, including but not limited to:
 
 
          * [Website](https://superalgos.org);
@@ -206,9 +206,9 @@ To become eligible for conducting a MEO of ALGO tokens, the exchange needs to fu
 
 The following criteria relates to certain notions pertaining to a format of Competitions that is still under analysis. Therefore, the definitions set forth hereafter shall be regarded as preliminary and should be interpreted as a declaration of intentions rather than final definitions.
 
-Exchanges are expected (under contract) to award prizes to the winners of each competition. The funds for prizes Exchanges shall pay originate from Transaction Fees. 
+Exchanges are expected (under contract) to award prizes to the winners of each Competition. The funds for prizes Exchanges shall pay originate from Transaction Fees. 
 
-In order to bootstrap this critical incentive during early stages of the project the Superalgos Organization shall issue a number of ALGO tokens and reserve them for ALGO Prize distribution among Competition winners. In later stages, once Competitions are fully understood, the Governing Body shall implement the appropriate mechanisms to guarantee enough incentives are in place to fuel this critical activity of the Community.
+In order to bootstrap this critical incentive during early stages of the project the Superalgos Organization shall issue a number of ALGO Tokens and reserve them for ALGO Prize distribution among Competition winners. In later stages, once Competitions are fully understood, the Governing Body shall implement the appropriate mechanisms to guarantee enough incentives are in place to fuel this critical activity of the Community.
 
 ### ACPF Deployment Rules
 
@@ -247,8 +247,6 @@ __In general, the yearly distribution is:__
 ```
 Stream for year n = Standard Stream * Size * 1.2 * / ( n + 1)
 ```
-
-The rationale on why ALGO Stream are designed to work in this way is covered on the ALGO Streams page on the website.
 
 ### ALGO Stream Deployment Rules
 
