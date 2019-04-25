@@ -168,7 +168,6 @@ For successive MEOs, the following rules apply.
    1. The Governing Body shall approve the MEO Plan with 50% + 1 “yes” votes. In case the plan is rejected, the Superalgos Organization shall present a new plan.
 
 1. __Exchanges MEO Eligibility Criteria__
-
 To become eligible for conducting a MEO of ALGO tokens, the exchange needs to fulfill the following requirements:
 
    1. Meet functional, infrastructure and security standards to be defined by the Superalgos Organization, to ensure a fair and safe distribution of the tokens.
