@@ -2,7 +2,7 @@
 
 This document results from the Superalgos Constitution mandate for the Core Team to produce the ALGO Governance Charter that shall govern the ALGO Token, and has been enacted by April 2019 with the unanimous vote of all existing Core Team Members at the time of the vote.
 
-The present document defines a Governing Body, a number of ALGO Issuing Policies and a basic Macroeconomics of the ALGO Token interpretation resulting from the analysis of the Issuing Policies.
+The present document defines a Governing Body and a number of ALGO Issuing Policies resulting from the interpretation of the ALGO Macroeconomics Guidance.
 
 The policies described hereafter set the general rules that shall govern the economy in the foreseeable future. The current Governing Body acknowledges the fact that provisioning for the precise needs the ecosystem may encounter in future stages is beyond the current analysis capacity.
 
