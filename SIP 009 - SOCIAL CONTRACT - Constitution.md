@@ -85,11 +85,11 @@ The Core Team shall develop and publish an ALGO Governance Charter establishing 
 
 The ALGO Governance Charter shall initially cover the most basic governance elements to enable the early administration of the ALGO Token, and shall evolve within the lapse of one year starting from the date of this document, to include the following provisions:
 
-Provision for a mechanism to appoint future Superalgos Organization Board of Directors.
+1. Provision for a mechanism to appoint future Superalgos Organization Board of Directors.
 
-Provision for a mechanism to amend, update and evolve the ALGO Governance Charter.
+1. Provision for a mechanism to amend, update and evolve the ALGO Governance Charter.
 
-Develop the governance system so that it can work at scale, supporting the participation of thousands of Team Members.
+1. Develop the governance system so that it can work at scale, supporting the participation of thousands of Team Members.
 
 # Superalgos Organization Mandate
 
@@ -125,13 +125,13 @@ The Superalgos Organization shall engage in activities conducive to accomplishin
 
 The Superalgos Organization is responsible for:
 
-Technically enabling the governance system established by the ALGO Governance Charter.
+1. Technically enabling the governance system established by the ALGO Governance Charter.
 
-Preparing budgets to be approved by the Governing Body established by the ALGO Governance Charter.
+1. Preparing budgets to be approved by the Governing Body established by the ALGO Governance Charter.
 
-Executing the budgets, in compliance with the provisions in the ALGO Governance Charter.
+1. Executing the budgets, in compliance with the provisions in the ALGO Governance Charter.
 
-Dealing with and facilitating the onboarding of Exchanges.
+1. Dealing with and facilitating the onboarding of Exchanges.
 
 ### Awareness
 
