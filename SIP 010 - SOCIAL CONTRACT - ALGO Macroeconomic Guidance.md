@@ -48,7 +48,7 @@ There are two ways to earn an ALGO stream.
 
 The first is by undertaking one of the available Areas of Responsibility advertised on the website, starting work and submitting a first deliverable. These modules constitute the critical development path set out by the Governing Body. 
 
-The second is, in the spirit of permissionless innovation, to contribute in an independant way to then submit the work together with a plan for future development and maintenance to the community. If the work proposal is accepted, an ALGO Stream is granted.
+The second is, in the spirit of permissionless innovation, to contribute in an independent way to then submit the work together with a plan for future development and maintenance to the community. If the work proposal is accepted, an ALGO Stream is granted.
 
 The size of the ALGO Stream is proportional to the amount and relevance of the work being done and is negotiated before the inception and after the work is submitted. Negotiation is conducted between Team Members and the new contributor. In case the negotiation is not successful, the work may still be distributed in the permissionless system.
 
@@ -82,13 +82,13 @@ It is natural to assume that demand for prizes is infinite. However, the model b
 
 Competitions are sponsored as a way to bootstrap the feedback loop incentivizing Algo-Makers to compete, which generates more volume at Exchanges originating during Competition events, thus driving Exchanges to invest in further sponsoring Competition prizes, which in the end attracts more Algo-Makers to the Community.
 
-This feedback loop fuels a parallel loop by which the more Algo-Makers create Algorithms, the more the trading intelligence grows. An increase in trading intelligence is linked with improving trading performance, which increases demand for algo-rentals, further stimulating the growth of the Algo-Makers group.
+This feedback loop fuels a parallel loop by which the more Algo-Makers create Algorithms, the more the trading intelligence grows. An increase in trading intelligence is linked with improving trading performance, which increases demand for Trading Services, further stimulating the growth of the Algo-Makers group.
 
 The prize fund will receive 50% of tokens issued in MEOs for as long as it is deemed necessary. This percentage may vary in the future.
 
 # Inflation Cap and Formulas
 
-A simple top-down monetary expansion formula is deployed to allow the ALGO ecosystem to expand as well as prevent harmful inflation. Though rapid economic growth is expected from adoption, advancement and maturation of tools utilized by the ALGO community, the actual growth potential of the system is unknown and should not be prematurely limited.
+A simple top-down monetary expansion formula is deployed to allow the ALGO ecosystem to expand as well as prevent harmful inflation. Though rapid economic growth is expected from adoption, advancement and maturation of tools utilized by the Community, the actual growth potential of the system is unknown and should not be prematurely limited.
 
 __ISSUING GUIDANCE: A hard cap of no more than 1.5 billion ALGO issued during the first five years will be set. For the sixth year and on,  an issuing cap of 150 million ALGO per year will be set. This allows for continuous expansion after the fifth year, but with a declining inflation rate.__
 
