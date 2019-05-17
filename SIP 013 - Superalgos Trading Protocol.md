@@ -293,6 +293,12 @@ This is the third of the sequence and where a position is taken and the trade ne
 
 The last stage is for physically exiting the position and managing the exit procedures.
 
+### Branches
+
+The protocol data structure is designed in a way that each branch of the hierarchy is well defined. This is important since we expect people to detach branches and connect them at some other nodes of their own Trading System, and also share it with others to be reused in someone else Trading Systems as well.   
+
+An example to clarify this: A __phase__ object has a __nextPhaseEvent__ property. There a user of the protocol can attach any object of type __Event__ with subtype __Next Phase Event__. Protocol editor software might allow them to create those events, and also to attach already existing ones the user might have created before or some event shared with him by other protocol users.
+
 ## Software Related to this Protocol
 
 ### Tools for Creating Strategies
