@@ -2,7 +2,7 @@
 
 _This is a recommendation by Luis Molina based in conversations with Andreja._
 
-During the curren life span of the project we have learnt that there are many ways to create trading bots. One of them is from scratch. During the inception of this porject we did just that and soon we realized that all bots tend to do similar things, giving us the possibility to abstract those common actions into a framework that prevent bots creators to start from scratch and have to manage all the details. Organically a framework emerged and after testing different ideas, we could abstract a protocol that can be use to specify the desired behaviour. This protocol is independent from the implementation, giving us the opportunity to have more than one if needed. In this current proposal, I will detail what it could be considered version one of such a protocol, knowing that it will not conver everything needed in future iterations.
+During the current life span of the project we have learned that there are many ways to create trading bots. One of them is from scratch. During the inception of this project we did just that and soon realized that all bots tend to do similar things, giving us the possibility to abstract those common actions into a framework that prevent bots creators to start from scratch and having to manage all the details. Organically a framework emerged and after testing different ideas, we could abstract a protocol that can be use to specify the desired behaviour. This protocol is independent from the implementation, giving us the opportunity to have more than one if needed. In this current proposal, I will detail what it could be considered version one of such a protocol, knowing that it will not convey everything needed in future iterations.
 
 It is needed to be said that many aspects of automated trading, such as _high frequency trading, arbitrage_ and other techniques are currently outside the scope of version 0.1. Hopefully we will add them once we start exploring those spaces.
 
@@ -37,7 +37,7 @@ tradingSystem = {
                 subType: 'Pre-Opening',
                 triggerOnEvent: {
                     type: 'Event',
-                    subType: 'Triffer On Event',
+                    subType: 'Trigger On Event',
                     situations: [
                         {
                             name: '',
