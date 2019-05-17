@@ -15,20 +15,24 @@ In this current early version, the protocol is just the description of a JSON ob
 ```
 tradingSystem = {
   id: '',
+  parameters: {
+    switchOff: {
+      lossPercentage: 50,
+      profitPercentage: 100
+    }
+  },
   strategies: [
     {
       name: '',
       isActive: true || false,
-      parameters: {
-        validExchanges: [],
+      filters: {
+        exchanges: [],
         market: 'assetA/assetB',
-        baseAsset: '',
-        switchOff: {
-          lossPercentage: 50,
-          profitPercentage: 100
-        }
+        baseAsset: ''
       },
       preOpeningStage: {
+        type: 'Stage',
+     subType: 'Pre-Opening',
         triggerOnEvent: {
           situations: [
             {
@@ -38,7 +42,11 @@ tradingSystem = {
                 {
                   name: '',
                   type: 'Condition',
-                  code: '<valid JavaScript code that evaluates to either true or false>'
+                  code: {
+                    type: 'Code',
+                 subType: 'Condition Code',
+                    code: '<valid JavaScript code that evaluates to either true or false>'
+                  }
                 }
               ]
             }
@@ -58,7 +66,11 @@ tradingSystem = {
                 {
                   name: '',
                   type: 'Condition',
-                  code: '<valid JavaScript code that evaluates to either true or false>'
+                  code: {
+                    type: 'Code',
+                 subType: 'Condition Code',
+                    code: '<valid JavaScript code that evaluates to either true or false>'
+                  }
                 }
               ]
             }
@@ -73,7 +85,11 @@ tradingSystem = {
                 {
                   name: '',
                   type: 'Condition',
-                  code: '<valid JavaScript code that evaluates to either true or false>'
+                  code: {
+                    type: 'Code',
+                 subType: 'Condition Code',
+                    code: '<valid JavaScript code that evaluates to either true or false>'
+                  }
                 }
               ]
             }
@@ -81,6 +97,8 @@ tradingSystem = {
         }
       },
       openingStage: {
+        type: 'Stage',
+     subType: 'Opening',
         initialExits: {
           initialStopLoss: {
             formula: {
@@ -95,7 +113,11 @@ tradingSystem = {
                     {
                       name: '',
                       type: 'Condition',
-                      code: '<valid JavaScript code that evaluates to either true or false>'
+                      code: {
+                        type: 'Code',
+                     subType: 'Condition Code',
+                        code: '<valid JavaScript code that evaluates to either true or false>'
+                      }
                     }
                   ]
                 }
@@ -117,7 +139,11 @@ tradingSystem = {
                     {
                       name: '',
                       type: 'Condition',
-                      code: '<valid JavaScript code that evaluates to either true or false>'
+                      code: {
+                        type: 'Code',
+                     subType: 'Condition Code',
+                        code: '<valid JavaScript code that evaluates to either true or false>'
+                      }
                     }
                   ]
                 }
@@ -127,9 +153,15 @@ tradingSystem = {
         }
       },
       tradeManagementStage: {
+        type: 'Stage',
+     subType: 'Trade Management',
         stopLoss: {
+          type: 'Managed Item',
+       subType: 'Stop Loss',
           phases: [
             {
+              type: 'Phase',
+           subType: 'Stop Loss Phase',
               name: '',
              formula: {
                 type: 'Formula',
@@ -147,7 +179,11 @@ tradingSystem = {
                       {
                         name: '',
                         type: 'Condition',
-                        code: '<valid JavaScript code that evaluates to either true or false>'
+                        code: {
+                          type: 'Code',
+                       subType: 'Condition Code',
+                          code: '<valid JavaScript code that evaluates to either true or false>'
+                        }
                       }
                     ]
                   }
@@ -157,9 +193,13 @@ tradingSystem = {
           ]
         },
         takeProfit: {
+          type: 'Managed Item',
+       subType: 'Take Profit',
           phases: [
             {
               name: '',
+              type: 'Phase',
+           subType: 'Take Profit Phase',
              formula: {
                 type: 'Formula',
              subType: 'Take Profit Formula',
@@ -176,7 +216,11 @@ tradingSystem = {
                       {
                         name: '',
                         type: 'Condition',
-                        code: '<valid JavaScript code that evaluates to either true or false>'
+                        code: {
+                          type: 'Code',
+                       subType: 'Condition Code',
+                          code: '<valid JavaScript code that evaluates to either true or false>'
+                        }
                       }
                     ]
                   }
@@ -186,7 +230,10 @@ tradingSystem = {
           ]
         }
       },
-      closingStage: {}
+      closingStage: {
+        type: 'Stage',
+     subType: 'Closing',
+      }
     }
   ]
 }
@@ -254,7 +301,7 @@ By having a protocol to describe the desired automation it opens the door to dif
 
 #### Strategizer
 
-A tool to allow users input their formulas and code and output the protocol format in a web dashboard format.
+A web tool to allow users input their formulas and code and output the protocol format in a web dashboard format.
 
 #### Strategy Map
 
