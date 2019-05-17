@@ -112,7 +112,7 @@ tradingSystem = {
                         type: 'Initial Definition',
                         subType: 'Initial Stop Loss',
                         formula: {
-                            code: 'takeProfit = <valid JavaScript code>'
+                            code: '<valid JavaScript code that evaluates to a number>'
                         },
                         firstPhaseEvent: {
                             type: 'Event',
@@ -142,7 +142,7 @@ tradingSystem = {
                         formula: {
                             type: 'Formula',
                             subType: 'Take Profit Formula',
-                            code: 'takeProfit = <valid JavaScript code>'
+                            code: '<valid JavaScript code that evaluates to a number>'
                         },
                         firstPhaseEvent: {
                             type: 'Event',
@@ -182,7 +182,7 @@ tradingSystem = {
                             formula: {
                                 type: 'Formula',
                                 subType: 'Stop Loss Formula',
-                                code: 'takeProfit = <valid JavaScript code>'
+                                code: '<valid JavaScript code that evaluates to a number>'
                             },
                             nextPhaseEvent: {
                                 type: 'Event',
@@ -219,7 +219,7 @@ tradingSystem = {
                             formula: {
                                 type: 'Formula',
                                 subType: 'Take Profit Formula',
-                                code: 'takeProfit = <valid JavaScript code>'
+                                code: '<valid JavaScript code that evaluates to a number>'
                             },
                             nextPhaseEvent: {
                                 type: 'Event',
