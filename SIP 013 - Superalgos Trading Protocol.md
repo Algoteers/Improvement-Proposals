@@ -2,7 +2,7 @@
 
 _This is a recommendation by Luis Molina based in conversations with Andreja._
 
-During the curren life span of the project we have learnt that there are many ways to create trading bots. One of them is from scratch. During the inception of this porject we did just that and soon we realized that all bots tend to do similar things, giving us the possibility to abstract those common actions into a framework that prevent bots creators to start from scratch and have to manage all the details. Organically a framework emerged and after testing different ideas, we could abstract a protocol that can be use to specify the desired behaviour. This protocol is independent from the implementation, giving us the opportunity to have more than one if needed. In this current proposal, I will detail what it could be considered version one of such a protocol, knowing that it will not conver everything needed in future iterations.
+During the current life span of the project we have learned that there are many ways to create trading bots. One of them is from scratch. During the inception of this project we did just that and soon realized that all bots tend to do similar things, giving us the possibility to abstract those common actions into a framework that prevent bots creators to start from scratch and having to manage all the details. Organically a framework emerged and after testing different ideas, we could abstract a protocol that can be use to specify the desired behaviour. This protocol is independent from the implementation, giving us the opportunity to have more than one if needed. In this current proposal, I will detail what it could be considered version one of such a protocol, knowing that it will not convey everything needed in future iterations.
 
 It is needed to be said that many aspects of automated trading, such as _high frequency trading, arbitrage_ and other techniques are currently outside the scope of version 0.1. Hopefully we will add them once we start exploring those spaces.
 
@@ -37,7 +37,7 @@ tradingSystem = {
                 subType: 'Pre-Opening',
                 triggerOnEvent: {
                     type: 'Event',
-                    subType: 'Triffer On Event',
+                    subType: 'Trigger On Event',
                     situations: [
                         {
                             name: '',
@@ -261,38 +261,6 @@ tradingSystem = {
 
 This is currently the head of the hierarchy. It is a set of individual strategies plus some common parameters that governs the overall behavior.
 
-#### Conditions
-
-A __condition__ is the part of a strategy that represents something that must happen. Conditions are children of Situations.
-
-#### Code
-
-The code defined at a condition must evaluate at either true or false. The code might use any available indicator data.
-
-#### Situations
-
-A __situation__ is the part of a strategy used to trigger an event. A __situation__ is defined mostly by the conditions attached to it. When all of its children conditions evaluates to true, then the situation is considered to be true and the event to which the situation is attached to is triggered.
-
-#### Phase
-
-A __phase__ is a part of the Trade Management Stage sections Take Profit and Stop. A __phase__ represents a period of time during which the same formula is needed to be applied for either the Take Profit or Stop Loss.
-
-#### Next Phase Event
-
-Phases can contain this type of event, which essentially means is that once any of the situations attached to this event becomes true, the automata must consider itself on the next defined phase and start using the formula attached to that next phase from there on.  
-
-#### Formula
-
-It is the section where a formula can be defined to be used during the phase at which the formula is attached to.
-
-#### Stop Loss
-
-The __stop loss__ is the part of the Trade Management Stage that defines what to do and when with the Stop Loss during an active trade. In trading Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is fragmented in phases.
-
-#### Take Profit
-
-The __take profit__ is the part of the Trade Management Stage that defines the target price at which to take profit. Its definition is also fragmented in phases.
-
 #### Stage
 
 Stages are one of the fundamental parts in which a strategy is divided into. There are four different stages:
@@ -313,10 +281,41 @@ This is the third of the sequence and where a position is taken and the trade ne
 
 The last stage is for physically exiting the position and managing the exit procedures.
 
+#### Stop Loss
+
+The __stop loss__ is the part of the Trade Management Stage that defines what to do and when with the Stop Loss during an active trade. In trading Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is fragmented in phases.
+
+#### Take Profit
+
+The __take profit__ is the part of the Trade Management Stage that defines the target price at which to take profit. Its definition is also fragmented in phases.
+
+#### Phase
+
+A __phase__ is a part of the Trade Management Stage sections Take Profit and Stop. A __phase__ represents a period of time during which the same formula is needed to be applied for either the Take Profit or Stop Loss.
+
+#### Formula
+
+It is the section where a formula can be defined to be used during the phase at which the formula is attached to.
+
+#### Next Phase Event
+
+Phases can contain this type of event, which essentially means is that once any of the situations attached to this event becomes true, the automata must consider itself on the next defined phase and start using the formula attached to that next phase from there on.  
+
+#### Situations
+
+A __situation__ is the part of a strategy used to trigger an event. A __situation__ is defined mostly by the conditions attached to it. When all of its children conditions evaluates to true, then the situation is considered to be true and the event to which the situation is attached to is triggered.
+
+#### Conditions
+
+A __condition__ is the part of a strategy that represents something that must happen. Conditions are children of Situations.
+
+#### Code
+
+The code defined at a condition must evaluate at either true or false. The code might use any available indicator data.
+
 ### Branches
 
 The protocol data structure is designed in a way that each branch of the hierarchy is well defined. This is important since we expect people to detach branches and connect them at some other nodes of their own Trading System, and also share it with others to be reused in someone else Trading Systems as well.   
-
 An example to clarify this: A __phase__ object has a __nextPhaseEvent__ property. There a user of the protocol can attach any object of type __Event__ with subtype __Next Phase Event__. Protocol editor software might allow them to create those events, and also to attach already existing ones the user might have created before or some event shared with him by other protocol users.
 
 ## Software Related to this Protocol
