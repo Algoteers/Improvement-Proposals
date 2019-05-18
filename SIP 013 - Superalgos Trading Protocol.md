@@ -261,6 +261,14 @@ tradingSystem = {
 
 This is currently the head of the hierarchy. It is a set of individual strategies plus some common parameters that governs the overall behavior.
 
+#### Parameters
+
+We have identified so far two global parameters needed. __lossPercentageOne__ is for preventing the user to loose all its capital due to strategy design mistakes and __profitPercentage__ to create a graceful way to stop the execution when a certain goal is reached.
+
+#### Filters
+
+The __filters__ section is needed to define where a strategy applies. In other words for which scenario the strategy was designed for. The most relevant information in this section are the __market__, the __baseAsset__ and the __exchanges__ in which this strategy should be used. The ultimate purpose of the __filters__ is to allow users of the trading engine to filter out all strategies that are outside the scope of the market, exchange or base asset that is being used at the moment, without requiring users to specifically activate and deactivate the strategies in their __trading system__ that do not apply to the exchange/market/baseAsset they are standing at.  
+
 #### Stage
 
 Stages are one of the fundamental parts in which a strategy is divided into. There are four different stages:
