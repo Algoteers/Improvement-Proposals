@@ -12,247 +12,10 @@ In this current early version, the protocol is just the description of a JSON ob
 
 ### Data Structure
 
+The following is a preview of how this data structure looks like. You can see the whole structure here: 
+
 ```
-tradingSystem = {
-    id: '',
-    parameters: {
-        switchOff: {
-            lossPercentage: 50,
-            profitPercentage: 100
-        }
-    },
-    strategies: [
-        {
-            name: '',
-            isActive: true || false,
-            filters: {
-                type: 'Filters',
-                subType: 'Strategy Filters',
-                exchanges: [],
-                market: 'assetA/assetB',
-                baseAsset: ''
-            },
-            preOpeningStage: {
-                type: 'Stage',
-                subType: 'Pre-Opening',
-                triggerOnEvent: {
-                    type: 'Event',
-                    subType: 'Trigger On Event',
-                    situations: [
-                        {
-                            name: '',
-                            type: 'Situation',
-                            conditions: [
-                                {
-                                    name: '',
-                                    type: 'Condition',
-                                    code: {
-                                        type: 'Code',
-                                        subType: 'Condition Code',
-                                        code: '<valid JavaScript code that evaluates to either true or false>'
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                sizeDefinition: {
-                    tradeSize: 0
-                },
-                capitalRequest: {},
-                capitalAllocation: {},
-                takePositionEvent: {
-                    type: 'Event',
-                    subType: 'Take Position Event',
-                    situations: [
-                        {
-                            name: '',
-                            type: 'Situation',
-                            conditions: [
-                                {
-                                    name: '',
-                                    type: 'Condition',
-                                    code: {
-                                        type: 'Code',
-                                        subType: 'Condition Code',
-                                        code: '<valid JavaScript code that evaluates to either true or false>'
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                triggerOffEvent: {
-                    type: 'Event',
-                    subType: 'Trigger Off Event',
-                    situations: [
-                        {
-                            name: '',
-                            type: 'Situation',
-                            conditions: [
-                                {
-                                    name: '',
-                                    type: 'Condition',
-                                    code: {
-                                        type: 'Code',
-                                        subType: 'Condition Code',
-                                        code: '<valid JavaScript code that evaluates to either true or false>'
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                }
-            },
-            openingStage: {
-                type: 'Stage',
-                subType: 'Opening',
-                initialDefinition: {
-                    initialStopLoss: {
-                        type: 'Initial Definition',
-                        subType: 'Initial Stop Loss',
-                        formula: {
-                            code: '<valid JavaScript code that evaluates to a number>'
-                        },
-                        firstPhaseEvent: {
-                            type: 'Event',
-                            subType: 'First Phase Event',
-                            situations: [
-                                {
-                                    name: '',
-                                    type: 'Situation',
-                                    conditions: [
-                                        {
-                                            name: '',
-                                            type: 'Condition',
-                                            code: {
-                                                type: 'Code',
-                                                subType: 'Condition Code',
-                                                code: '<valid JavaScript code that evaluates to either true or false>'
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    },
-                    initialTakeProfit: {
-                        type: 'Initial Definition',
-                        subType: 'Initial Take Profit',
-                        formula: {
-                            type: 'Formula',
-                            subType: 'Take Profit Formula',
-                            code: '<valid JavaScript code that evaluates to a number>'
-                        },
-                        firstPhaseEvent: {
-                            type: 'Event',
-                            subType: 'First Phase Event',
-                            situations: [
-                                {
-                                    name: '',
-                                    type: 'Situation',
-                                    conditions: [
-                                        {
-                                            name: '',
-                                            type: 'Condition',
-                                            code: {
-                                                type: 'Code',
-                                                subType: 'Condition Code',
-                                                code: '<valid JavaScript code that evaluates to either true or false>'
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    }
-                }
-            },
-            tradeManagementStage: {
-                type: 'Stage',
-                subType: 'Trade Management',
-                stopLoss: {
-                    type: 'Managed Item',
-                    subType: 'Stop Loss',
-                    phases: [
-                        {
-                            type: 'Phase',
-                            subType: 'Stop Loss Phase',
-                            name: '',
-                            formula: {
-                                type: 'Formula',
-                                subType: 'Stop Loss Formula',
-                                code: '<valid JavaScript code that evaluates to a number>'
-                            },
-                            nextPhaseEvent: {
-                                type: 'Event',
-                                subType: 'Next Phase Event',
-                                situations: [
-                                    {
-                                        name: '',
-                                        type: 'Situation',
-                                        conditions: [
-                                            {
-                                                name: '',
-                                                type: 'Condition',
-                                                code: {
-                                                    type: 'Code',
-                                                    subType: 'Condition Code',
-                                                    code: '<valid JavaScript code that evaluates to either true or false>'
-                                                }
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                takeProfit: {
-                    type: 'Managed Item',
-                    subType: 'Take Profit',
-                    phases: [
-                        {
-                            name: '',
-                            type: 'Phase',
-                            subType: 'Take Profit Phase',
-                            formula: {
-                                type: 'Formula',
-                                subType: 'Take Profit Formula',
-                                code: '<valid JavaScript code that evaluates to a number>'
-                            },
-                            nextPhaseEvent: {
-                                type: 'Event',
-                                subType: 'Next Phase Event',
-                                situations: [
-                                    {
-                                        name: '',
-                                        type: 'Situation',
-                                        conditions: [
-                                            {
-                                                name: '',
-                                                type: 'Condition',
-                                                code: {
-                                                    type: 'Code',
-                                                    subType: 'Condition Code',
-                                                    code: '<valid JavaScript code that evaluates to either true or false>'
-                                                }
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            closingStage: {
-                type: 'Stage',
-                subType: 'Closing',
-            }
-        }       
-    ]
-}
+
 ```
 
 ### Protocol Definitions
@@ -309,6 +72,10 @@ Is the particular event that produces the __trading engine__ to exit a strategy,
 
 Is the event that produces a change of stages within the execution of the __trading engine__ from stage 1 __Pre-Opening__ to stage 2 __Opening__ where the steps to enter into a trade are defined.
 
+#### Opening Execution
+
+At this current early version this is just the mention of a section that will define the execution details. This means the order types to be used, how these orders are going to be fragmented, at which price each one and what to do under each possible situation that could go wrong with each of them. Future versions of the protocol will bring these definitions in detail.
+
 #### Stop Loss
 
 The __stop loss__ is the part of the Trade Management Stage that defines what to do and when with the Stop Loss during an active trade. In trading Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is fragmented in phases.
@@ -357,7 +124,7 @@ By having a protocol to describe the desired automation it opens the door to dif
 
 A web tool to allow users input their formulas and code and output the protocol format in a web dashboard format.
 
-#### Strategy Map
+#### Strategy Designer
 
 A visual tool resembling a mind map that allow users to input their formulas and code and output the protocol format.
 
