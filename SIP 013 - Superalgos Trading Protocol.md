@@ -156,6 +156,10 @@ The code defined at a condition must evaluate at either true or false. The code 
 The protocol data structure is designed in a way that each branch of the hierarchy is well defined. This is important since we expect people to detach branches and connect them at some other nodes of their own Trading System, and also share it with others to be reused in someone else Trading Systems as well.   
 An example to clarify this: A __phase__ object has a __nextPhaseEvent__ property. There a user of the protocol can attach any object of type __Event__ with subtype __Next Phase Event__. Protocol editor software might allow them to create those events, and also to attach already existing ones the user might have created before or some event shared with him by other protocol users.
 
+#### Object Types and Subtypes
+
+You might notice that each object has a __type__ and __subType__ properties. In contrast with the __name__ property available at some objects for users to put a friendly name to their creations, the __type__ and __subType__ properties are not user defined. Instead they are definitions at the protocol level which enable software speaking the protocol language allow or restrict certain actions users can do with these objects. For example: an object of type: 'Managed Item' and subType: 'Take Profit' allow objects of type: 'Phase' to be attached to them, but not any 'Phase' object, only the ones of subType: 'Take Profit Phase'.
+
 ## Software Related to this Protocol
 
 ### Tools for Creating Strategies
