@@ -289,6 +289,26 @@ This is the third of the sequence and where a position is taken and the trade ne
 
 The last stage is for physically exiting the position and managing the exit procedures.
 
+#### Capital Request & Allocation.
+
+When trading as part of a team in institutions, there is a point in time when a trader request the capital needed to take a position. Usually some other department fulfill the request later allocating the capital, and at that point in time the trader is ready to take a position with it. This current early version of the protocol just name these events for later definition in future versions.
+
+#### Event
+
+In this context, an event is something that happens in the market, that is being monitored by the __trading engine__ . Events are described as one or more __situations__ which in turn are described as one or more __conditions__ both defined below. There are several types of event defined within this protocol.
+
+#### Trigger On Event
+
+Is the particular event that makes the __trading engine__ to enter into one strategy specifically on stage 1: __Pre-Opening__
+
+#### Trigger Off Event
+
+Is the particular event that produces the __trading engine__ to exit a strategy, while still at stage 1: __Pre-Opening__
+
+#### Take Position Event
+
+Is the event that produces a change of stages within the execution of the __trading engine__ from stage 1 __Pre-Opening__ to stage 2 __Opening__ where the steps to enter into a trade are defined.
+
 #### Stop Loss
 
 The __stop loss__ is the part of the Trade Management Stage that defines what to do and when with the Stop Loss during an active trade. In trading Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is fragmented in phases.
@@ -307,7 +327,8 @@ It is the section where a formula can be defined to be used during the phase at 
 
 #### Next Phase Event
 
-Phases can contain this type of event, which essentially means is that once any of the situations attached to this event becomes true, the automata must consider itself on the next defined phase and start using the formula attached to that next phase from there on.  
+It is the particular event that defines when the __trading engine__ needs to consider the next __phase__ as the one it is standing at and by doing so using that phase's formula.
+
 
 #### Situations
 
