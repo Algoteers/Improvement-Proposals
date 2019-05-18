@@ -12,10 +12,52 @@ In this current early version, the protocol is just the description of a JSON ob
 
 ### Data Structure
 
-The following is a preview of how this data structure looks like. You can see the whole structure here: 
+The following is a preview of how this data structure looks like. You can see the whole structure here: https://github.com/Superalgos/Improvement-Proposals/blob/master/SIP%20013/Trading%20Protocol.js
 
 ```
-
+tradingSystem = {
+  id: '',
+  parameters: {
+    switchOff: {
+      lossPercentage: 50,
+      profitPercentage: 100
+    }
+  },
+  strategies: [
+    {
+      name: '',
+      isActive: true || false,
+      filters: {
+        type: 'Filters',
+        subType: 'Strategy Filters',
+        exchanges: [],
+        market: 'assetA/assetB',
+        baseAsset: ''
+      },
+      preOpeningStage: {
+        type: 'Stage',
+        subType: 'Pre-Opening',
+        triggerOnEvent: {
+          type: 'Event',
+          subType: 'Trigger On Event',
+          situations: [
+            {
+              name: '',
+              type: 'Situation',
+              conditions: [
+                {
+                  name: '',
+                  type: 'Condition',
+                  code: {
+                    type: 'Code',
+                    subType: 'Condition Code',
+                    code: '<valid JavaScript code that evaluates to either true or false>'
+                  }
+                }
+              ]
+            }
+          ]
+        },
 ```
 
 ### Protocol Definitions
