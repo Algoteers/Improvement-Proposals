@@ -34,7 +34,7 @@ tradingSystem = {
         market: 'assetA/assetB',
         baseAsset: ''
       },
-      trigger: {
+      triggerStage: {
         type: 'Stage',
         subType: 'Trigger',
         triggerOnEvent: {
