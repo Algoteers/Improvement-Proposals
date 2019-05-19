@@ -34,9 +34,9 @@ tradingSystem = {
         market: 'assetA/assetB',
         baseAsset: ''
       },
-      preOpeningStage: {
+      trigger: {
         type: 'Stage',
-        subType: 'Pre-Opening',
+        subType: 'Trigger',
         triggerOnEvent: {
           type: 'Event',
           subType: 'Trigger On Event',
@@ -76,21 +76,21 @@ The __filters__ section is needed to define where a strategy applies. In other w
 
 #### Stage
 
-Stages are one of the fundamental parts in which a strategy is divided into. There are four different stages:
+Stages are one of the fundamental parts in which a strategy is divided into. There are four different stages: Trigger, Open, Manage and Close.
 
-#### Pre-Opening Stage
+#### Trigger Stage
 
-It is the first stage of the sequence. It is where the size is decided, capital requested and allocated.
+It is the first stage of the sequence. It is where the trade position size is decided and where capital is requested and allocated. It is also where the strategy is triggered on or off and where the opening trade position is defined. 
 
-#### Opening Stage
+#### Open Stage
 
-It is the second stage of the sequence. It is where the initial Stop and Take Profit is defined and where we wait for the event to take a position.
+It is the second stage of the sequence. It is where the initial Stop Loss and Take Profit phases are defined and where we wait for the event to take a position.
 
-#### Trade Management Stage
+#### Manage Stage
 
-This is the third of the sequence and where a position is taken and the trade needs to be managed.
+This is the third of the sequence and where a trade position has been taken and the trade needs to be managed by defining further Stop Loss and Take Profit phases.
 
-#### Closing Stage
+#### Close Stage
 
 The last stage is for physically exiting the position and managing the exit procedures.
 
@@ -104,52 +104,52 @@ In this context, an event is something that happens in the market, that is being
 
 #### Trigger On Event
 
-Is the particular event that makes the __trading engine__ to enter into one strategy specifically on stage 1: __Pre-Opening__
+Is the particular event that makes the __trading engine__ enter into one strategy specifically on stage 1: __Trigger__
 
 #### Trigger Off Event
 
-Is the particular event that produces the __trading engine__ to exit a strategy, while still at stage 1: __Pre-Opening__
+Is the particular event that produces the __trading engine__ to exit a strategy, while still at stage 1: __Trigger__
 
 #### Take Position Event
 
-Is the event that produces a change of stages within the execution of the __trading engine__ from stage 1 __Pre-Opening__ to stage 2 __Opening__ where the steps to enter into a trade are defined.
+Is the event that produces a change of stages within the execution of the __trading engine__ from stage 1 __Trigger__ to stage 2 __Open__ where the steps to enter into a trade are defined.
 
 #### Opening Execution
 
-At this current early version this is just the mention of a section that will define the execution details. This means the order types to be used, how these orders are going to be fragmented, at which price each one and what to do under each possible situation that could go wrong with each of them. Future versions of the protocol will bring these definitions in detail.
+At this current early version this is just the mention of a section that will define the execution details. This defines the order types to be used, how these orders are going to be allotted and price for each one, and what to do under each possible situation that could go wrong with each of them. Future versions of the protocol will enable setting these definitions in detail.
 
 #### Stop Loss
 
-The __stop loss__ is the part of the Trade Management Stage that defines what to do and when with the Stop Loss during an active trade. In trading Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is fragmented in phases.
+The __stop loss__ is the part of the Manage Stage that defines what to do and when with the Stop Loss during an active trade. In trading, Stop Loss is called to the target value at which a trader would leave its position taking the expected losses. Its definition is divided in phases.
 
 #### Take Profit
 
-The __take profit__ is the part of the Trade Management Stage that defines the target price at which to take profit. Its definition is also fragmented in phases.
+The __take profit__ is the part of the Manage Stage that defines the target price at which to take profit. Its definition is also divided in phases.
 
 #### Phase
 
-A __phase__ is a part of the Trade Management Stage sections Take Profit and Stop. A __phase__ represents a period of time during which the same formula is needed to be applied for either the Take Profit or Stop Loss.
+A __phase__ is a part of the Manage Stage sections Take Profit and Stop Loss. A __phase__ represents a period of time during which a given formula is applied for either Take Profit or Stop Loss.
 
 #### Formula
 
-It is the section where a formula can be defined to be used during the phase at which the formula is attached to.
+It is the section where a formula can be defined and used during a given phase.
 
 #### Next Phase Event
 
-It is the particular event that defines when the __trading engine__ needs to consider the next __phase__ as the one it is standing at and by doing so using that phase's formula.
+It is the particular event that defines when the __trading engine__ needs to shift to the next __phase__ and apply the new phase's formula.
 
 
 #### Situations
 
-A __situation__ is the part of a strategy used to trigger an event. A __situation__ is defined mostly by the conditions attached to it. When all of its children conditions evaluates to true, then the situation is considered to be true and the event to which the situation is attached to is triggered.
+A __situation__ is the part of a strategy used to trigger an event. A __situation__ is defined by the conditions attached to it. When all of its children conditions evaluates to true, then the situation is considered to be true and the event to which the situation is attached to is triggered.
 
 #### Conditions
 
-A __condition__ is the part of a strategy that represents something that must happen. Conditions are children of Situations.
+A __condition__ is the part of a strategy that represents when a __situation__ may occur. Conditions are children of Situations.
 
 #### Code
 
-The code defined at a condition must evaluate at either true or false. The code might use any available indicator data.
+The code defined for a condition must evaluate at either true or false. The code defined for a phase must evaluate as a number. The code might use any available indicator data.
 
 ### Branches
 
