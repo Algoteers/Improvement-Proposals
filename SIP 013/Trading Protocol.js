@@ -17,9 +17,9 @@ tradingSystem = {
         market: 'assetA/assetB',
         baseAsset: ''
       },
-      preOpeningStage: {
+      triggerStage: {
         type: 'Stage',
-        subType: 'Pre-Opening',
+        subType: 'Trigger',
         triggerOnEvent: {
           type: 'Event',
           subType: 'Trigger On Event',
@@ -89,9 +89,9 @@ tradingSystem = {
           ]
         }
       },
-      openingStage: {
+      openStage: {
         type: 'Stage',
-        subType: 'Opening',
+        subType: 'Open',
         initialDefinition: {
           initialStopLoss: {
             type: 'Initial Definition',
@@ -151,12 +151,12 @@ tradingSystem = {
               ]
             }
           },
-          openingExecution: {}
+          openExecution: {}
         }
       },
-      tradeManagementStage: {
+      manageStage: {
         type: 'Stage',
-        subType: 'Trade Management',
+        subType: 'Manage',
         stopLoss: {
           type: 'Managed Item',
           subType: 'Stop Loss',
@@ -232,9 +232,9 @@ tradingSystem = {
           ]
         }
       },
-      closingStage: {
+      closeStage: {
         type: 'Stage',
-        subType: 'Closing'
+        subType: 'Close'
       }
     }
   ]
