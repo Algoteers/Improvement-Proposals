@@ -151,7 +151,7 @@ tradingSystem = {
               ]
             }
           },
-          openingExecution: {}
+          openExecution: {}
         }
       },
       manageStage: {
