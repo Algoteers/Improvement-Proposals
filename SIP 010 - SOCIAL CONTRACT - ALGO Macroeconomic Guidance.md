@@ -2,7 +2,7 @@
 
 During early stages of the Superalgos Project, the founders entertained the notion of a capped ALGO Token economy with a simple distribution in a number of pools. As the Core Team grew and the project evolved, it became apparent that such simplistic approach would not serve a complex, ever-evolving ALGO Ecosystem in an optimal manner.
 
-In March 2019, Superalgos Team Members made a decision to redesign the ALGO Token economy to be dynamic and uncapped. Economic activity has not begun at the time of writing, thus the proposed model within is designed for evolution and the guidance of economic experts as the system matures. The current scope of examination explores the dynamics of issuance and sets forth an inflationary policy defining issuance channels and the introduction of an inflation cap — the point at which issuance stops within a given time period. 
+In March 2019, Superalgos Team Members made a decision to redesign the ALGO Token economy to be dynamic and uncapped. Economic activity has not begun at the time of writing, thus the proposed model within is designed for evolution and the guidance of economic experts as the system matures. The current scope of examination explores the dynamics of issuance and sets forth an expansionary policy defining issuance channels and the introduction of an inflation cap — the point at which issuance stops within a given time period. 
 
 Any future changes to this policy and established cap will require consensus from the Governing Body.
 
