@@ -18,13 +18,15 @@ We need a query specifically designed to reveal the actual status of execution a
 responseData = {
 	tradingSimulator: {
 		status: <code from the list below>,
-		processDate,
-		loopNumber
+		processDate: <the process date takend from the Clone Executor>,
+		loopNumber: <the loop number taken from the Clone Executor>,
+		error: <technical error information the user can forward to support>
 		}
 	tradingExecutor: {
-		status: <code from the list below>
-		processDate,
-		loopNumber
+		status: <code from the list below>,
+		processDate: <the process date takend from the Clone Executor>,
+		loopNumber: <the loop number taken from the Clone Executor>,
+		error: <technical error information the user can forward to support>
 		}
 }
 ```
