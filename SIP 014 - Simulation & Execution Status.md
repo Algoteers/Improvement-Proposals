@@ -19,17 +19,22 @@ responseData = {
 	tradingSimulator: {
 		status: <code from the list below>,
 		processDate,
-		loop
+		loopNumber
 		}
 	tradingExecutor: {
 		status: <code from the list below>
 		processDate,
-		loop
+		loopNumber
 		}
 }
 ```
 
 ### Status Codes & their Meaning
+
+| Code        	| Meaning       | 
+| ------------- |:-------------:| 
+| 000 | No request received to run the simulator | 
+
 
 000	No request received to run the simulator
 001	User started simulation from Clones UI
