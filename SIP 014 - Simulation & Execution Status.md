@@ -29,6 +29,9 @@ responseData = {
 		error: <technical error information the user can forward to support>
 		}
 }
+
+The processDate and loopNumber might be used by the UI to create progess bars or other visual aids that represent progress.
+
 ```
 
 ### Status Codes & their Meaning
