@@ -1,4 +1,4 @@
-# SIP 014 - SIP 014 - Simulation & Execution Status
+# SIP 014 - Simulation & Execution Status
 
 _This is a recommendation by Luis Molina to be implemented as a joint effort._
 
