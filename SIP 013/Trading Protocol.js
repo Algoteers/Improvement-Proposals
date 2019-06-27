@@ -1,6 +1,14 @@
 tradingSystem = {
   id: '',
   parameters: {
+    type: 'Parameters',
+    baseAsset: {
+      type: 'Base Asset',
+      formula: {
+        type: 'Formula',
+        code: '<valid JavaScript code that evaluates to the asset name as listed on the market>'
+      }
+    },
     switchOff: {
       lossPercentage: 50,
       profitPercentage: 100
@@ -14,8 +22,7 @@ tradingSystem = {
         type: 'Filters',
         subType: 'Strategy Filters',
         exchanges: [],
-        market: 'assetA/assetB',
-        baseAsset: ''
+        market: 'assetA/assetB'
       },
       triggerStage: {
         type: 'Stage',
@@ -41,8 +48,12 @@ tradingSystem = {
             }
           ]
         },
-        sizeDefinition: {
-          tradeSize: 0
+        positionSize: {
+          type: 'Position Size',
+          formula: {
+            type: 'Formula',
+            code: '<valid JavaScript code that evaluates to a number>'
+          }
         },
         capitalRequest: {},
         capitalAllocation: {},
@@ -158,8 +169,7 @@ tradingSystem = {
         type: 'Stage',
         subType: 'Manage',
         stopLoss: {
-          type: 'Managed Item',
-          subType: 'Stop Loss',
+          type: 'Stop',
           phases: [
             {
               type: 'Phase',
