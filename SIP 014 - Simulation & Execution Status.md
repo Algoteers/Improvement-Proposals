@@ -34,29 +34,26 @@ responseData = {
 | Code        	| Meaning       | 
 | ------------- |:-------------:| 
 | 000 | No request received to run the simulator | 
-
-
-000	No request received to run the simulator
-001	User started simulation from Clones UI
-002	User started simulation from Canvas App
-010 Kupernates Running
-011	Kubernates not working because of X
-012	Kubernates not working because of Y
-020	Docker Container Running
-021	Docker Container not Running because of X
-022	Docker Container not Running because of Y
-030 Clone Executor Running
-031	Clone Executor Stopped Running
-032 Clone Executor Stopped with Errors
-033 Clone Executor Stopped because of X
-034 Clone Executor Stopped because of Y
-040	Simulation Engine Running
-041	Simulation Engine Stopped with Errors
-042	Simulation Engine Stopped because of X 
-043	Simulation Engine Stopped because of Y
-050	Simulation Engine Running
-051	Simulation Engine Stopped with Errors
-052	Simulation Engine Stopped because of X 
-053	Simulation Engine Stopped because of Y
+| 001 | User started simulation from Clones UI |
+| 002 | User started simulation from Canvas App |
+| 010 | Kupernates Running |
+| 011 | Kubernates not working because of X |
+| 012 | Kubernates not working because of Y |
+| 020 | Docker Container Running |
+| 021 | Docker Container not Running because of X |
+| 022 | Docker Container not Running because of Y |
+| 030 | Clone Executor Running |
+| 031 | Clone Executor Stopped Running |
+| 032 | Clone Executor Stopped with Errors |
+| 033 | Clone Executor Stopped because of X |
+| 034 | Clone Executor Stopped because of Y |
+| 040 | Simulation Engine Running |
+| 041 | Simulation Engine Stopped with Errors |
+| 042 | Simulation Engine Stopped because of X  |
+| 043 | Simulation Engine Stopped because of Y |
+| 050 | Simulation Engine Running |
+| 051 | Simulation Engine Stopped with Errors |
+| 052 | Simulation Engine Stopped because of X  |
+| 053 | Simulation Engine Stopped because of Y |
 
 X and Y should be replaced for real situations that might happen and probably others should be added.
