@@ -1,0 +1,211 @@
+# SIP 015 - Superalgos Trading Intelligence Framework (TradeInt) Definition
+
+#### [Work-in-progress]: The bulk intention of the framework structure is in place, but the ever-developing details are ongoing. However, intent of this definition should be perceivable despite being incomplete.
+
+**Abstract:** The Superalgos project is undertaking a challenge rife with complexities that would be difficult to manage under the more optimal efficiency and guidance provided within a traditional centralized organization. However, the Superalgos vision and values require a level of accessibility and transparency only deliverable by a decentralized organization. Therefore a system to embrace these challenges and to optimize the benefits of decentralized organization must be created.
+
+##### Table of Contents
+1. [Introduction](#introduction) 
+2. [Framework Theory](#framework-theory)
+    - [How it works](#how-it-works)
+    - [A quick tour](#a-quick-tour) 
+3. [Framework Architecture](#framework-architecture)
+    - [The Superalgos Vision](#the-superalgos-vision)
+    - [Superalgos Principles and Values](#superalgos-principles-and-values)
+    - [Cycles](#cycles)
+    - [Stages](#stages)
+    - [Flows and Moments](#flows-and-moments)
+6. [Core Flows](#core-flows)
+7. [Implementation](#implementation)
+8. [Appendix](#appendix)
+
+---
+
+<a name="introduction"></a>
+## Introduction
+
+
+![Superalgos Trade](./sa-tradint-overview.png) 
+
+> ###The _Superalgos Trading Intelligence Framework_ is a system designed for enabling an open global collaboration of humans and machines 
+
+The _Superalgos Trading Intelligence Framework (TradeInt)_ is a mental model that unifies the interdependent project elements within whilst clarifying their context, relevance and relationships. Analogously, if the Superalgos project is a large, complex building, the framework is the collection of strategies and tools, such as personal management and scaffolding, that enables construction.  
+
+The key to this framework is that the Superalgos Project elements are not related by just their purpose of use, but by conceptual representation directly bound to the project's foundational principles and by extension, the project's vision. The purpose of the Trading Intelligence framework is for making use of that conceptual representation to strengthen and optimize the project's journey from vision to vision goal. Specifically, the framework goal is fo  rming a laser-focus towards building a _superior trading intelligence._
+
+The purpose of this definition is to specify the why, what and how of the Superalgos Trading Intelligence Framework and is not optimized for primary external marketing. However, once an audience is engaged to a level of awareness and understanding of the project, it becomes an ideal tool to guide external stakeholders into becoming value contributors. 
+
+_Note: At this time, the development of the TradeInt Framework has been concentrated in the higher-level abstract concepts of the project. Crafting and implementing concrete integrations of the framework will be a part of its lifetime journey.
+
+<a name="framework-theory"></a>
+## Framework Theory
+<a name="how-it-works"></a>
+### How it works
+
+1. The Superalgos Trading Intelligence Framework works by presenting and guiding the Superalgos project through a lens of shared purpose. In short, utilizing TradeInt requires the following:
+	- Understand the vision
+	- Understand the principles
+	- Use these understandings to strategically guide planning, development and assessment of project tasks.
+	- Utilize tools and knowledge cultivated by framework to increase collaborative efficiency
+
+2. The concise purpose of vision paired with the natural interdependent equilibrium of core principles provide a strong objective foundation for logical assessment and prioritization.
+
+3. Segmentation and guidance provided by the three core principles along with established Agile methodologies provides a quantifiable landscape for strategic project management.  
+
+As the framework is embraced and put to work, it will create a self-driving culture that will strongly guide the attitude and manner of all participants in the project. 
+
+### A Quick Tour
+
+TradeInt 
+
+![Superalgos Trade](./sa-tradint-journey.png) 
+
+![Superalgos Trade](./sa-tradint-principle-driven.png) 
+
+![Superalgos Trade](./sa-tradint-cycles-stages.png) 
+
+![Superalgos Trade](./sa-tradint-flows-moments.png) 
+
+![Superalgos Trade](./sa-tradint-core-flows.png) 
+
+![Superalgos Trade](./sa-tradint-fractal.png) 
+
+![Superalgos Trade](./sa-tradint-quantifying-moments.png) 
+
+![Superalgos Trade](./sa-power-of-three.png) 
+
+
+<a name="framework-architecture"></a>
+# Framework Architecture
+
+<a name="the-superalgos-vision"></a>
+## The Superalgos Vision
+
+<a name="relationship-between-vision-and-project"></a>
+### Relationship between Vision and Project
+
+![Illustration of relational scope between vision and project](./sa-9-scope.png)
+
+The vision of the Superalgos Project is to cultivate:
+> ### **a superior trading intelligence evolving within an open global collaboration of humans and machines at the service of all people**. 
+
+A vision cannot be owned and there are multiple paths for implementing that vision. Thus, the Superalgos Project is of a smaller scope within the greater vision. 
+
+Defining the specific implementation of the project's vision is the guidance of three principles:
+
+- Collaboration
+- Rapid Evolution
+- Permissionless Innovation
+
+<a name="understanding-the-vision"></a>
+### Understanding the Vision
+
+![Examining the Visionary Scope](./sa-9b-examing-scope.png)
+
+The vision can be segmented into a _what_, _how_ and _why_:
+
+- **what**: _A superior trading intelligence..._
+- **how**: _...evolving within an open global collaboration of humans and machines..._
+- **why**: _...at the service of all people_
+
+#### WHAT: A superior trading intelligence...
+
+> #### What is a _superior trading intelligence_?
+
+
+At the present time, most nouns paired with the word "intelligence" refer to some form of artificial intelligence (AI). While not yet a mainstream term, it is easy to associate "trading intelligence" to be "an artificial intelligence with a focus on trading." 
+
+An overarching issue with the current views on "artificial intelligence" is that this technology is referenced and perceived in the purview of an end-product — that of a machine with a similar, if not greater, general intelligence than a human being. This view results in:
+
+- perception that the purpose of AI is to replace humans;
+- overlooking the long journey from the present day reality of machines — possessing narrow, mimicked intelligence — all the way to the dream of a mature and useful general AI. 
+
+Setting aside the fear, uncertainty and doubt created by suc, the Superalgos project sidesteps these issues by embracing that long journey of creating such an intelligence. In doing so, is the recognized reality of required massive amounts of human time and intelligence. This time and intelligence will be given to machines, but for what purpose? So that machines can help humans do things that machines are really good at — like processing lots of data really fast — and eventually do it in a more intelligent manner. This in turn enables humans to concentrate on things they are good at such as non-linear abstraction and the dreams that derive a more beneficial future. From this is born a natural collaboration between humans _and_ machines and a sum intelligence of not just machines, but a collective intelligence of both humans and machines. 
+
+A new view becomes available:
+
+- AI is developed as a collaborative journey maximizing the potential of humans and machines. 
+
+Thus in the Superalgos Project, to be clear, a _superior trading intelligence_ is NOT just an end-product. 
+
+> **A _superior trading intelligence_ is the  journey of an ever-evolving trading collaboration and the sum collective intelligence of both humans and machines.** 
+
+#### HOW: ...evolving within an open global collaboration of humans and machines...
+
+At this point, we've nearly established that the **what** and **how** are one and the same. Leaving further the clarification as to the type of collaboration: one that is _open_ and _global_.
+
+In contrast to many other AI projects, especially those with a focus on trading, the Superalgos collaboration is open to the whole world to any who wish to contribute. This is counter to the many other projects working in closely guarded silos that intend to retain the benefits for themselves. 
+
+#### WHY: ...at the service of all people.
+
+Half of the purpose of Superalgos is **what** it is building. Thus the other half of the project purpose is **why** it is building a _superior trading intelligence._
+
+Nearly all trading intelligence technology is proprietary or only accessible to the already wealthy few. Such technology is closely guarded to maintain performance edge in the current marketplace, but is also held back under the guise of consumer safety within the trading industry. To be fair, there is indeed great potential risk, especially in automated trading at this time, but even the intellectual technology of risk management is held back. Yet, by creating accessibility for anyone to trade while minimizing knowledge on trading, especially that of risk management, the trading industry throws out any argument of safety. It merely makes the smaller, but far more numerous injections of value prey, to those holding all the tools and knowledge. 
+
+The Superalgos project is changing this paradigm by making these tools and knowledge accessible. This may be perceived as a loss of removing the edge of market performance but in its place is the greater opportunity of larger markets, more markets and increased liquidity. Trading is not a zero-sum game.
+
+> **The purpose of Superalgos is to build a _superior trading intelligence_ at the service of all people.** 
+
+<a name="superalgos-principles-and-values"></a>
+## Superalgos Principles and Values
+
+How the project defines the vision specifies how it will implement that vision. Further guiding the manner of this implementation are three core values or principles:
+
+- Collaboration
+- Rapid Evolution
+- Permissionless Innovation
+
+![Superalgos Principles and Values](./sa-principles-values.png)
+
+Each principle has two guiding values:
+
+- _Collaboration_: diversity and integrity
+- _Rapid Evolution_: competition and automation
+- _Permissionless Innovation_: initiative and accessibility
+
+
+
+
+<a name="cycles"></a>
+### Cycles
+
+<a name="stages"></a>
+### Stages
+
+<a name="flows-and-moments"></a>
+### Flows and Moments
+
+<a name="core-flows"></a>
+## Core Flows
+
+<a name="core-flows"></a>
+### TradeInt
+
+<a name="superalgos-platform"></a>
+### Superalgos Platform
+
+<a name="superalgos-competition-league"></a>
+### Superalgo Competition League
+
+<a name="ALGO-token-economy"></a>
+### ALGO Token Economy
+
+<a name="implementation"></a>
+## Implementation
+
+One of the biggest challenges of a conceptual framework is implementing and integrating its abstract propositions into tangible actions. Exacerbating this challenge is the inevitable reality of additional processes that create more work. The challenge further lies in an ongoing balance of maintaining these additional inconvenience for value added to the process in both short and long.
+
+
+
+<a name="appendix"></a>
+## Appendix
+
+### Definitions [Todo]
+
+Many of the Superalgos related definitions can be found on the main Superalgos Website. This framework introduces new definitions or alters the current existing set, both of which will listed here.
+
+
+
+
+
+
