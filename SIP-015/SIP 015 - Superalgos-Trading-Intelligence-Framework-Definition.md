@@ -128,7 +128,7 @@ A new view becomes available:
 
 Thus in the Superalgos Project, to be clear, a _superior trading intelligence_ is NOT just an end-product. 
 
-> **A _superior trading intelligence_ is the  journey of an ever-evolving trading collaboration and the sum collective intelligence of both humans and machines.** 
+> **A _superior trading intelligence_ is the  journey of an ever-evolving trading collaboration and the sum collective trading intelligence of both humans and machines.** 
 
 #### HOW: ...evolving within an open global collaboration of humans and machines...
 

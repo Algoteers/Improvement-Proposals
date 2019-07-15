@@ -51,14 +51,14 @@ Next steps include:
 
 ## Trading Intelligence Framework Definition
 
-Read the current version of the [Superalgos Trading Intelligence Framework Definition](./)
+Read the current version of the [Superalgos Trading Intelligence Framework Definition](./SIP-015/SIP%20015%20-%20Superalgos-Trading-Intelligence-Framework-Definition.md)
 
 ## Issues
 
 There are a number of strong assertions put forth by the Superalgos Trading Intelligence Framework:
 
 1. The Superalgos vision and core principles are the projects source of Truth. In essence, they become the doctrine of the Superalgos project.
-2. A "superior trading intelligence" is not merely _an artificial intelligence focused on trading_ but is actually **the collective intelligence of the Superalgos-guided global collaboration of humans and machines**.
+2. A "superior trading intelligence" is not merely _an artificial intelligence focused on trading_ but is actually **the collective trading intelligence of the Superalgos-guided global collaboration of humans and machines**.
 3. Given the above point, the ability to fulfill the project's purpose is built heavily on the ability to facilitate collaboration. _Just_ technical development is not an option. Systems for pre-planning, post-assessment _and_ open communication of the ongoing process is a requirement for success. Thus is the overarching goal of TradeInt to facilitate and enable collaboration in every manner possible. 
 
 
